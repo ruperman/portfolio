@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  --bg: #edf2f8;
+  --surface: #ffffff;
+  --surface-soft: #f5f8fc;
+  --header: #0f1724;
+  --header-muted: #b8c4d8;
+  --text-main: #141c2e;
+  --text-soft: #5f6d81;
+  --brand: #0f66f0;
+  --brand-deep: #0d4eb6;
+  --line: #d8dfeb;
+  --shadow: 0 18px 40px rgba(15, 23, 36, 0.08);
+  --radius: 18px;
+}
+
+body.dark {
+  --bg: #0d1119;
+  --surface: #111a27;
+  --surface-soft: #101827;
+  --header: #080d15;
+  --header-muted: #90a0b8;
+  --text-main: #f4f7fc;
+  --text-soft: #afbdd1;
+  --brand: #69a1ff;
+  --brand-deep: #3a7df0;
+  --line: #273246;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+h1,
+h2 {
+  font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+}
+
+p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app-shell {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+main {
+  display: grid;
+  gap: 0;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.section-alt {
+  background: var(--surface-soft);
+  border-block: 1px solid var(--line);
+}
+
+.section h2 {
+  font-size: clamp(1.7rem, 2vw + 1rem, 2.3rem);
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  max-width: 760px;
+  font-size: 1.07rem;
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.surface-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--brand-deep);
+}
+
+.btn-secondary {
+  border-color: var(--line);
+  background: var(--surface);
+  color: var(--text-main);
+}
+
+.btn-secondary:hover {
+  border-color: var(--brand);
+}
+
+.btn-outline {
+  border-color: var(--brand);
+  color: var(--brand);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(15, 102, 240, 0.08);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-grid,
+.skills-grid,
+.project-grid,
+.experience-grid,
+.contact-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.about-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.about-card,
+.skill-card,
+.project-card,
+.experience-card,
+.contact-card {
+  padding: 24px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+}
+
+.skill-card ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card {
+  display: grid;
+  gap: 14px;
+  transition: transform 170ms ease, box-shadow 170ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 42px rgba(15, 23, 36, 0.16);
+}
+
+.project-card h3,
+.experience-card h3 {
+  font-size: 1.3rem;
+}
+
+.project-description {
+  line-height: 1.7;
+}
+
+.project-label {
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  color: var(--text-main);
+  background: var(--surface-soft);
+}
+
+.achievement-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.filter-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-main);
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.filter-pill:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+}
+
+.filter-pill.active {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.experience-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.experience-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.experience-head p {
+  font-weight: 700;
+}
+
+.experience-period {
+  margin-bottom: 12px;
+  font-size: 0.92rem;
+}
+
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-card {
+  display: grid;
+  gap: 8px;
+  transition: transform 170ms ease, border-color 170ms ease;
+}
+
+.contact-card span {
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.contact-card strong {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand);
+}
+
+.site-footer {
+  padding: 28px 0 36px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 78px 0;
+  }
+
+  .about-grid,
+  .skills-grid,
+  .project-grid,
+  .experience-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 68px 0;
+  }
+
+  .about-card,
+  .skill-card,
+  .project-card,
+  .experience-card,
+  .contact-card {
+    padding: 20px;
+  }
+}

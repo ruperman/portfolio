@@ -1,0 +1,27 @@
+Ruper Angelo Reyes
+Software Developer | .NET | Full Stack
+London, Ontario, Canada
+
+SUMMARY
+Software Developer with years of experience building and maintaining business systems, including ERP, payroll, POS, and biometric-integrated solutions.
+
+TECHNICAL SKILLS
+Languages: C#, VB.NET, JavaScript, Python, C++, Java
+Frameworks: .NET Core, ASP.NET, Node.js, Vue.js, React
+Databases: SQL Server, MySQL, PostgreSQL, MongoDB
+Other: REST APIs, JWT auth, SOAP/REST integrations, CI/CD, Docker, Azure, AWS
+
+EXPERIENCE
+- Software Developer, Southwood Mindanao Corporation
+- Software Developer, Davao Unified Corporation
+- Software Developer, Hubport Interactive Incorporated
+- Software Developer, Canada Life
+
+EDUCATION
+Fanshawe College
+Computer Programming and Analysis
+
+CONTACT
+Email: ruperangeloreyes.dev@gmail.com
+GitHub: github.com/ruperangeloreyes
+LinkedIn: linkedin.com/in/ruperangeloreyes
