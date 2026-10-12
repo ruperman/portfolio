@@ -18,16 +18,6 @@ export default function Contact({ personalInfo }) {
 
           <a
             className="surface-card contact-card"
-            href={personalInfo.github}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>GitHub</span>
-            <strong>{personalInfo.github.replace("https://", "")}</strong>
-          </a>
-
-          <a
-            className="surface-card contact-card"
             href={personalInfo.linkedin}
             target="_blank"
             rel="noreferrer"

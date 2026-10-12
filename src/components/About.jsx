@@ -6,8 +6,9 @@ export default function About({ highlights }) {
       <div className="app-shell">
         <h2>About Me</h2>
         <p className="section-intro">
-          I specialize in enterprise-grade business systems where reliability,
-          performance, and long-term maintainability matter.
+          I’m a London, Ontario-based software developer with a background
+          spanning business systems development and enterprise application
+          support.
         </p>
 
         <div className="about-grid">

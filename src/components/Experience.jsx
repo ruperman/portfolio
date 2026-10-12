@@ -4,15 +4,18 @@ export default function Experience({ experiences }) {
   return (
     <FadeInSection id="experience" className="section-alt">
       <div className="app-shell">
-        <h2>Professional Experience</h2>
+        <h2>Work Experience</h2>
         <p className="section-intro">
-          Roles focused on delivering business value through robust systems and
-          thoughtful engineering decisions.
+          Experience developing and supporting business systems, improving
+          application reliability, and helping fellow programming students.
         </p>
 
         <div className="experience-grid">
           {experiences.map((item) => (
-            <article key={item.company} className="surface-card experience-card">
+            <article
+              key={`${item.company}-${item.role}`}
+              className="surface-card experience-card"
+            >
               <div className="experience-head">
                 <h3>{item.company}</h3>
                 <p>{item.role}</p>

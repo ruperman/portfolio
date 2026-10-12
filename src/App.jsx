@@ -4,14 +4,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import {
   aboutHighlights,
   experiences,
   personalInfo,
-  projects,
   skills,
 } from "./data/portfolioData";
 
@@ -39,7 +37,6 @@ export default function App() {
       <main>
         <About highlights={aboutHighlights} />
         <Skills skills={skills} />
-        <Projects projects={projects} />
         <Experience experiences={experiences} />
         <Contact personalInfo={personalInfo} />
       </main>

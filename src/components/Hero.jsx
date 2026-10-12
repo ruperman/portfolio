@@ -10,8 +10,8 @@ export default function Hero({ personalInfo }) {
         <p className="hero-summary">{personalInfo.summary}</p>
 
         <div className="hero-actions">
-          <a className="btn btn-primary" href="#projects">
-            View Projects
+          <a className="btn btn-primary" href="#experience">
+            View Experience
           </a>
           <a className="btn btn-secondary" href="#contact">
             Contact Me
