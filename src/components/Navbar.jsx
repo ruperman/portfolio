@@ -40,7 +40,12 @@ export default function Navbar({ isDarkMode, onToggleTheme, resumePath }) {
             </a>
           ))}
 
-          <a className="resume-link" href={resumePath} download onClick={closeMenu}>
+          <a
+            className="resume-link"
+            href={`${import.meta.env.BASE_URL}${resumePath}`}
+            download
+            onClick={closeMenu}
+          >
             Resume
           </a>
 

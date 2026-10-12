@@ -7,7 +7,7 @@ export const personalInfo = {
   email: "ruperangelo@gmail.com",
   github: "https://github.com/ruperangeloreyes",
   linkedin: "https://linkedin.com/in/ruperangeloreyes",
-  resumePath: "/RuperAngeloReyes-Resume.pdf",
+  resumePath: "RuperAngeloReyes-Resume.pdf",
 };
 
 export const skills = {

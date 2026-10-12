@@ -35,6 +35,14 @@ npm run build
 npm run preview
 ```
 
+## Deploying to GitHub Pages
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys
+the site whenever changes are pushed to `main`. In the repository settings,
+open **Settings → Pages** and set the build and deployment source to **GitHub
+Actions**. After the workflow succeeds, the site is available at
+`https://ruperman.github.io/portfolio/`.
+
 ## Tech Stack
 
 - [React](https://react.dev/) — UI library
