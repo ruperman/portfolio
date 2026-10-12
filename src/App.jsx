@@ -7,7 +7,6 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import {
-  aboutHighlights,
   experiences,
   personalInfo,
   skills,
@@ -35,7 +34,7 @@ export default function App() {
       <Hero personalInfo={personalInfo} />
 
       <main>
-        <About highlights={aboutHighlights} />
+        <About />
         <Skills skills={skills} />
         <Experience experiences={experiences} />
         <Contact personalInfo={personalInfo} />

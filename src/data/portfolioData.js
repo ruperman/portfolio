@@ -10,14 +10,6 @@ export const personalInfo = {
   resumePath: "/RuperAngeloReyes-Resume.pdf",
 };
 
-export const aboutHighlights = [
-  "Experience developing, maintaining, and supporting software applications in professional and enterprise environments.",
-  "Skills across Java, C#, C++, JavaScript, TypeScript, VB.NET, VB6, ASP.NET, .NET Core, React, and Vue.js.",
-  "Knowledge of RESTful APIs, SOAP, SQL Server, MySQL, PostgreSQL, MongoDB, and DB2, with strengths in system integration, testing, troubleshooting, and performance optimization.",
-  "Recent experience at Canada Life supporting enterprise applications and contributing to software development, testing, and control validation.",
-  "Peer mentor volunteer at Fanshawe College, helping programming students strengthen their coding and debugging skills.",
-];
-
 export const skills = {
   "Programming Languages": [
     "Java",
